@@ -7,7 +7,11 @@ import Boxing from './boxing';
 export default class App extends React.Component {
   render() {
     return (
-      <Boxing />
+      <View style={styles.container}>
+        <Boxing />
+        <Boxing />
+        <Boxing />
+      </View>
     );
   }
 }
@@ -17,7 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: 'row',
   },
   blue : {
     color: 'red',
