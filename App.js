@@ -2,16 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Greeting from './greetings';
 import Blink from './blinking';
+import Boxing from './boxing';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Greeting name='Melinda' />
-        <Greeting name='Jenny' />
-        <Greeting name='Lucas' />
-        <Blink text='You are blinking ' />
-      </View>
+      <Boxing />
     );
   }
 }
@@ -23,4 +19,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  blue : {
+    color: 'red',
+    fontSize: 30,
+  }
 });
